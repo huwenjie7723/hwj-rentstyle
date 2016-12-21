@@ -1,6 +1,6 @@
 $(function(){
 	var kg1 = true;
-	$('.login_agent_shenfen').on('touchstart',function(){
+	$('.login_agent_shenfen').on('tap',function(){
 		if(kg1){
 			$('.login_agent_kind').css('display','block');
 			kg1 = false;
@@ -10,12 +10,19 @@ $(function(){
 			kg1 = true;
 		}
 	})
-	$('.login_agent_shenfen li').on('touchstart',function(){
+	$('.login_agent_shenfen li').on('tap',function(){
 		var innerHtml = $(this).html();
 		$('#agent').val(innerHtml);
 	})
-	$(window).on('input',function(){
-		if($('#register_text1').val()!=''&&$('#register_code1').val()!=''&&$('#register_pwd1').val()!=''&&$('#register_pwd1').val()==$('#register_pwd2').val()&&$('#agent').val()!=''){
+	$('input').on('blur',function(){
+		var text1 = $('#register_text1').val();
+		var code1 = $('#register_code1').val();
+		var pwd1 = $('#register_pwd1').val();
+		var pwd2 = $('#register_pwd2').val();
+		var agent = $('#agent').val();
+		console.log(text1+','+code1+','+pwd1+','+pwd2+','+agent+',');
+		
+		if(text1!=''&& code1!=''&&pwd1!=''&& pwd1 == pwd2 && agent!=''){
 			$('.register_register').css('background','#ea5404')
 		}
 		else{
@@ -43,10 +50,10 @@ $(function(){
 	$('.btn_code').on('tap',function(){
 		code();		
 	})
-	$('.register_register').on('touchstart',function(){
+	$('.register_register').on('tap',function(){
 		$('.register_bg').css('display','block');
 	})
-	$('.register_bg_sure').on('touchstart',function(){
-		location.href = 'index.html';
+	$('.register_bg_sure').on('tap',function(){
+		location.href = '../index.html';
 	})
 })

@@ -4,7 +4,21 @@ $(function(){
 			$('.btn1').css('background','#ea5404');
 		}
 	})
+	$('.btn1').on('tap',function(){		
+		sessionStorage.setItem("username", $('input[type=text]').val());
+		var session =  sessionStorage.getItem("username");		
+		console.log(session);
+		if(session !=null){
+	    	 location.href = '../user/information1.html';
+	 	}	
+	})
 	
+	var name = sessionStorage.getItem("username");
+	if(name !=''){
+		console.log(name)
+		$('.information_username1').html(name);
+	}
+//	获取验证码
 	function code(){
 		var i =60;
 		var kg = true;
@@ -38,7 +52,28 @@ $(function(){
 			$('.forgetpwd_sure').css('background','#c7c7c7');	
 		}
 	})
-	$('.forgetpwd_sure').on('touchstart',function(){
-		location.href='index.html';
+	$('.forgetpwd_sure').on('tap',function(){
+		location.href='../index.html';
+	})
+	
+//	information
+	$('.login_top_bg').on('tap',function(){
+		location.href='../user/information.html';
+	})
+	$('.information_username').on('tap',function(){
+		location.href = '../login/index.html';
+	})
+	$('.information_setting').on('tap',function(){
+		location.href = 'setting.html';
+	})
+	$('.demand0').on('tap',function(){
+		location.href = 'release.html';
+	})
+//information1
+	$('.information_change').on('tap',function(){
+		location.href = 'agent_info.html';
+	})
+	$('.agent_editor').on('tap',function(){
+		location.href = 'agent_info_edit.html';
 	})
 })

@@ -1,13 +1,6 @@
-@import url(../main-bottom.css)
+@import "../main-bottom.css"
 body
-	margin 0
-	padding 0
 	font-size 14px
-ul
-	margin 0
-	padding 0
-ul li
-	list-style none
 .head_mes
 	width 100%
 	height 40px
@@ -56,6 +49,8 @@ ul li
 	.mes_col
 		color #FFF
 		background #EA5404
+.message_age
+	display none
 .mes_lump
 	width 92%
 	margin 0 auto
@@ -85,12 +80,13 @@ ul li
 		padding-bottom 10px
 		display inline-block
 	.lump_on
-		padding 10px 10px 0px 10px
+		padding 0px 10px 0px 10px
 		display inline-block
 		line-height 16px
 		font-size 12px
 		text-indent 2em
 		color #979797
+		-webkit-margin-after: 0em;
 		.mes_btn01
 			color #FFF
 			width 52px
@@ -110,9 +106,8 @@ ul li
 			background #97B715
 		.btn_col_4
 			background #EA5404
-	.lump_on_2
-		color #323232
-		text-indent 0em
+		&.lump_on_2
+			text-indent 1em
 	.mes_btn02
 		color #979797
 		width 80px
@@ -147,53 +142,13 @@ ul li
 #need_all
 	display none
 .footer
-	width 100%
-	height 54px
-	border-top 1px solid #d6d7dc
-	position fixed
-	bottom 0px
-	background #FFF
-	.footer_di
-		width 20%
-		height 54px
-		text-align center
-		float left
-		.footer_wor
-			background url("../img/footer_nav/bottom_nor_icon04@2x.png") no-repeat 10px 6px
-			background-size 50%
-			width 45px
-			height 54px
-			color #cacaca
-			display inline-block
-			padding-top 30px
-			font-size 14px
-		.footer_wor_2
-			background url("../img/footer_nav/bottom_nor_icon03@2x.png") no-repeat 10px 6px
-			background-size 50%
-		.footer_wor_3
-			background url("../img/footer_nav/bottom_press_icon02@2x.png") no-repeat 10px 6px
-			background-size 50%
-			position relative
-			.small_num
-				color #FFF
-				background #ea5404
-				text-align center
-				line-height 14px
-				display inline-block
-				border-radius 50%
-				width 14px
-				height 14px
-				font-size 10px
-				position absolute
-				left 22px
-				top 1px
-		.footer_wor_4
-			background url("../img/footer_nav/bottom_nor_icon01@2x.png") no-repeat 10px 6px
-			background-size 50%
-		 .wor_col_ch
-			color #ea5404
-		img
-			width 45px
-			height 39px
-			margin-top 7px
-
+	.footer_wor_1
+		background url("../../img/footer_nav/bottom_nor_icon04@2x.png") no-repeat center 5px
+		background-size 24px 24px
+	.footer_wor_3
+		background url("../../img/footer_nav/bottom_press_icon02@2x.png") no-repeat center 5px
+		background-size 24px 24px
+	.footer_wor_4
+		background url("../../img/footer_nav/bottom_nor_icon01@2x.png") no-repeat center 5px
+		background-size 24px 24px
+			

@@ -1,3 +1,8 @@
+@import url("../header.css");
+@import url("../user/setting.css");
+.login_title {
+  color: #000;
+}
 .must {
   height: 33px;
   width: 100%;
@@ -24,7 +29,7 @@
   left: 10px;
   width: 40px;
   height: 40px;
-  background: url("../img/reservedetails/content_img_user@2x.png") no-repeat;
+  background: url("../../img/reservedetails/content_img_user@2x.png") no-repeat;
   background-size: cover;
 }
 .appo_bar .appo_bar_name {
@@ -44,8 +49,8 @@
   font-size: 12px;
 }
 .appo_bar .bar_tel {
-  width: 15%;
-  float: left;
+  width: 13%;
+  float: right;
   text-align: center;
   line-height: 40px;
 }
@@ -114,6 +119,8 @@
   margin-left: 3%;
   margin-top: 30px;
 }
+@import "../header.css";
+@import "../user/setting.css";
 .appo_state {
   width: 100%;
   height: 44px;
@@ -152,6 +159,7 @@
   padding-left: 10px;
 }
 .order_btn {
+  display: flex;
   width: 100%;
   height: 49px;
   position: absolute;
@@ -160,7 +168,7 @@
   border-top: 1px solid #e3e3e8;
 }
 .order_btn .btn_one {
-  width: 32%;
+  flex: 1;
   line-height: 49px;
   display: inline-block;
   color: #ea5404;
@@ -213,7 +221,6 @@
   display: inline-block;
 }
 body {
-  font-family: "微软雅黑";
   margin: 0;
   padding: 0;
 }

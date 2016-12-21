@@ -1,7 +1,17 @@
 @import url("../main-bottom.css");
+body,
 ul {
   margin: 0;
   padding: 0;
+}
+body {
+  background: #efeff4;
+}
+.i_head {
+  background: #fff;
+  text-align: center;
+  height: 25px;
+  line-height: 25px;
 }
 .appo_index_bar {
   width: 94%;
@@ -87,6 +97,9 @@ ul {
   margin-right: 15px;
   margin-top: 5px;
   display: inline-block;
+}
+.appo_index_bar .wor_state1 {
+  display: none;
 }
 @media all and (min-width: 590px) {
   .appo_index_bar {

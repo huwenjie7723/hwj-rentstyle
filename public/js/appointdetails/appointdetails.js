@@ -1,15 +1,14 @@
-window.onload = function(){
-	var btn = document.getElementById("wipe_btn");
-	var wipe = document.getElementById("wipe_appo");
-	var cancel = document.getElementById("cancel");
-	var confirm = document.getElementById("confirm");
-	btn.onclick = function(){
-		wipe.style.display = "block";
-	}
-	cancel.onclick = function(){
-		wipe.style.display = "none";
-	}
-	confirm.onclick = function(){
-		wipe.style.display = "none";
-	}
-}
+$(function(){
+	$('.bar_tel').on('touchstart',function(){
+		$('.clear_bg').css('display','block');
+	})
+	$('.clear_cancle').on('touchstart',function(){
+		$('.clear_bg').css('display','none');
+	})
+	$('.clear_sure').on('touchstart',function(){
+		location.href = '../index/index.html';
+	})
+	$('.btn_one1').on('touchstart',function(){
+		location.href = 'changedate.html'
+	})
+})
