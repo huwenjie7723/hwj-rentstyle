@@ -299,8 +299,13 @@ ul {
   background: url("../../img/issuebuildings/content_plus_icon@2x.png") no-repeat 25px 20px #d4d4d9;
   margin-top: 60px;
   line-height: 120px;
+  position: relative;
 }
 .iss_buildings .add_pic .add_name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
   border: none;
   background: none;
   display: inline-block;

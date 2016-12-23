@@ -13,7 +13,10 @@ $(function(){
 	location.href = '../index/index.html';
 	})
 	$('.main_li1').on('tap',function(){
-	location.href = '../appoint/appoint_index.html';
+		location.href = '../appoint/appoint_index.html';
+	})
+	$('.main_li2').on('tap',function(){
+	location.href = '../issue/issue_add.html';
 	})
 	$('.main_li3').on('tap',function(){
 	location.href = '../message_all/message_all.html';

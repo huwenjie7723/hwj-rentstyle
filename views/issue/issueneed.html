@@ -16,27 +16,29 @@
 		<div id="issue_all" class="issue_all">
 			<div class="head_deng">
 				<span id="cancel" class="cha_cancel">取消</span>
-				<span>预约改期</span>		
+				<span>发布需求</span>		
 				<span id="issue" class="cha_confirm">发布</span>
 			</div>
 			<input type="text" placeholder="周杰伦"/>
 			<input type="text" placeholder="18956214521"/>
-			<textarea name="" rows="15" cols="15" onfocus="this.value=''; this.onfocus=null;" >描述一下您的需求，比如黄埔100-200m&sup2;，5-6元/m&sup2;/天，环境好点，底层，临近地铁。</textarea>
+			<textarea name="" rows="15" cols="15" >描述一下您的需求，比如黄埔100-200m&sup2;，5-6元/m&sup2;/天，环境好点，底层，临近地铁。</textarea>
 		</div>
 		
 		<div id="issned_zhe" class="wipe">
 			<div class="wipe_sm">
 				<span class="wipe_sm_p">您确定要退出此次发布？</span>
 				<span id="iss_can" class="cancel">取消</span>
-				<span onclick="window.open('../homepage/index.html','_self')" class="cancel confirm">确定</span>
+				<span class="cancel confirm">确定</span>
 			</div>
 		</div>
 		<div id="iss_succ" class="wipe">
 			<div class="wipe_sm">
 				<span class="wipe_sm_p">需求发布成功，请稍后</span>
-				<span onclick="window.open('../homepage/index.html','_self')" class="wipe_one">确定</span>
+				<span class="wipe_one">确定</span>
 			</div>
 		</div>
-		<script src="../public/js/issueneed.js"></script>
+			<script src="../public/js/zepto.min.js"></script>
+	<script src="../public/js/touch.js"></script>
+		<script src="../public/js/issue/issueneed.js"></script>
 	</body>
 </html>

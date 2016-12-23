@@ -1,17 +1,17 @@
-window.onload = function(){
-	var up_cancel = document.getElementById("up_cancel");
-	var up_confirm = document.getElementById("up_confirm");
-	var up_can = document.getElementById("up_can");
-	var up_kua = document.getElementById("up_kua");
-	var ensure = document.getElementById("ensure");
-
-	up_cancel.onclick = function(){
-		up_kua.style.display = "block";
-	}
-	up_can.onclick = function(){
-		up_kua.style.display = "none";
-	}
-	up_confirm.onclick = function(){
-		ensure.style.display = "block";
-	}
-}
+$(function(){
+	$('.cha_cancel').on('tap',function(){
+		$('.clear_bg').css('display','block');
+	})
+	$('.clear_cancle').on('tap',function(){
+		$('.clear_bg').css('display','none');
+	})
+	$('.clear_sure').on('tap',function(){
+		location.href = history.back();
+	})
+	$('.cha_confirm').on('tap',function(){
+		$('.bg').css('display','block');
+	})
+	$('.success_sure').on('tap',function(){
+		location.href ='orders.html'
+	})
+})

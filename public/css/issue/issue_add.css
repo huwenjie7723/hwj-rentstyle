@@ -1,5 +1,14 @@
 body {
+  margin: 0;
+  padding: 0;
+}
+.iss_add_all {
   background: #1d1c1b;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
 }
 .iss_add {
   position: absolute;
@@ -18,11 +27,11 @@ body {
   width: 95px;
   height: 95px;
   display: inline-block;
-  background: url("../img/issue/publish_btn02@2x.png") no-repeat;
+  background: url("../../img/issue/publish_btn02@2x.png") no-repeat;
   background-size: cover;
 }
 .iss_add .round .round_wh_2 {
-  background: url("../img/issue/publish_btn01@2x.png") no-repeat;
+  background: url("../../img/issue/publish_btn01@2x.png") no-repeat;
   background-size: cover;
 }
 .iss_add .round .word_wh {
@@ -38,8 +47,52 @@ body {
   bottom: 20px;
   left: 50%;
   margin-left: -7px;
-  background: url("../img/issue/publish_close_icon@2x.png") no-repeat;
+  background: url("../../img/issue/publish_close_icon@2x.png") no-repeat;
   width: 14px;
   height: 14px;
   background-size: cover;
+}
+.iss_none {
+  background: rgba(99,99,99,0.5);
+  font-family: "微软雅黑";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.issue_none {
+  position: absolute;
+  top: 40%;
+  width: 72%;
+  height: 94px;
+  left: 14%;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+.issue_none .none_wor {
+  display: inline-block;
+  height: 52px;
+  line-height: 52px;
+  width: 100%;
+  font-size: 14px;
+  color: #646464;
+  border-bottom: 1px solid #eee;
+}
+.issue_none .none_can {
+  display: inline-height;
+  width: 50%;
+  text-align: center;
+  height: 41px;
+  line-height: 41px;
+  color: #646464;
+  font-size: 14px;
+  float: left;
+}
+.issue_none .none_con {
+  color: #ea5404;
+  border-left: 1px solid #ccc;
+  box-sizing: border-box;
 }

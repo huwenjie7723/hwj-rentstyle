@@ -14,7 +14,7 @@
 	</head>
 	<body>
 		<div class="head_deng">
-			<span onclick="window.open('orders.html','_self')" class="cha_cancel">取消</span>
+			<span class="cha_cancel">取消</span>
 			<span>预约改期</span>		
 			<span id="change" class="cha_confirm">确定</span>
 		</div>
@@ -25,7 +25,7 @@
 				<span class="bar_type">租户</span>
 			</div>
 			<div id="wipe_btn" class="bar_tel">
-				<img src="../../public/img/reservedetails/content_icon_call@2x.png" alt="" />
+				<img src="../public/img/reservedetails/content_icon_call@2x.png" alt="" />
 			</div>
 		</div>
 		<span class="must">预约信息</span>
@@ -56,28 +56,34 @@
 		</div>
 		<span class="must">更改预约时间</span>
 		<div class="change_time">
-			<input id="txt" type="text" placeholder="2016/08/08"/>
+			<input id="txt" type="date" >
 		</div>
-		<div id="wipe_appo" class="wipe">
-			<div class="wipe_sm">
-				<span class="wipe_sm_p">您确定要拨打电话么？</span>
-				<span id="cancel1" class="cancel">取消</span>
-				<span id="confirm1" class="cancel confirm">确定</span>
+		<div class="clear_bg">
+			<div class="clear_bg_info">
+				<div class="clear_bg_info_title">您确定要打电话么？</div>
+				<div class="clear_bg_info_bottom">
+					<span class="clear_cancle">取消</span>					
+					<span class="clear_sure">确定</span>
+				</div>
 			</div>
 		</div>
-		<div id="time" class="wipe">
-			<div class="wipe_sm">
-				<span class="wipe_sm_p">预约只能更改一次，请和客户确认</span>
-				<span onclick="window.open('orders.html','_self')" class="cancel">取消</span>
-				<span id="confirm2" class="cancel confirm">确定</span>
+		<div class="clear_bg1">
+			<div class="clear_bg_info">
+				<div class="clear_bg_info_title">预约只能修改一次，请和客户确认？</div>
+				<div class="clear_bg_info_bottom">
+					<span class="clear_cancle">取消</span>					
+					<span class="clear_sure">确定</span>
+				</div>
 			</div>
 		</div>
-		<div id="ensure" class="wipe">
-			<div class="wipe_sm">
-				<span class="wipe_sm_p">时间修改成功，记得准时赴约哦</span>
-				<span onclick="window.open('orders.html','_self')" class="wipe_one">确认</span>
+		<div class="bg">
+			<div class="success_bg">
+				<div class="waitting">时间修改成功，记得准时赴约哦</div>
+				<div class="success_sure">确认</div>
 			</div>
 		</div>
+		<script src="../public/js/zepto.min.js"></script>
+		<script src="../public/js/touch.js"></script>
 		<script src="../public/js/changedate/changedate.js"></script>
 	</body>
 </html>

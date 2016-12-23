@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1,
 			maximum-scale=1,minimum-scale=1,user-scalable=no"/>
 <title>杭州瑞栎网络科技股份有限公司</title>
     <meta name="keywords" content="杭州瑞栎网络科技股份有限公司"/>
     <meta name="description" content="杭州瑞栎网络科技有限公司成立于2015年是一家专注于专业市场电子商务公司
 杭州瑞栎网络科技有限公司成立于2015年， 公司主要经营教育软件 多媒体技术 游戏软件 计算机数据处理技术 计算机系统集成 教育信息咨询，公司秉承与客户共赢理念，为企业提供高效、务实的互联网营销服务，在专业市场的电子商务建设领域具有独特优势和丰富经验。"/>
-
+		<link rel="stylesheet" href="//cdn.bootcss.com/normalize/5.0.0/normalize.min.css" />
 		<link rel="stylesheet" href="../public/css/issue/issue_add.css" />
 	</head>
 	<body>
-		<div class="iss_add">
-			<div onclick="window.open('issue.html','_self')" class="round">
-				<span class="round_wh"></span>
-				<span class="word_wh">发布需求</span>
+		<div class="iss_add_all">
+			<div class="iss_add">
+				<div class="round">
+					<span class="round_wh"></span>
+					<span class="word_wh">发布需求</span>
+				</div>
+				<div class="round rou_rig">
+					<span class="round_wh round_wh_2"></span>
+					<span class="word_wh">发布房源</span>
+				</div>
 			</div>
-			<div onclick="window.open('issueneed.html','_self')" class="round rou_rig">
-				<span class="round_wh round_wh_2"></span>
-				<span class="word_wh">发布房源</span>
+			<span class="add_x"></span>
+		</div>
+		<div class="iss_none">
+			<div class="issue_none">
+				<span class="none_wor">请先进行登录</span>
+				<span id="none_can" class="none_can">取消</span>
+				<span id="none_con" class="none_can none_con">确定</span>
 			</div>
 		</div>
-		<span onclick="window.open('../homepage/index.html','_self')" class="add_x"></span>
+		
 	</body>
+	<script src="../public/js/zepto.min.js"></script>
+	<script src="../public/js/touch.js"></script>
+	<script src="../public/js/zepto-fx.js"></script>
+	<script src="../public/js/issue/issue_add.js"></script>
 </html>

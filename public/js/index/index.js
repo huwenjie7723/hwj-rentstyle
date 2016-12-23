@@ -60,14 +60,6 @@ var time = setInterval(right,2000);
 		play();
 	})
 
-	var $body = $('body');
-	var startY,
-		moveY;
-	$body.on('tap',function(e){
-		var th = e.touches[0];
-		startY = th.clientY;
-	})
-
 	$(window).on('scroll',function(){
 		var top = parseInt($(window).scrollTop());
 		if(top>=50){
@@ -76,13 +68,11 @@ var time = setInterval(right,2000);
 			$('.index_search1').css('display','block');
 			$('.index_top1').css('display','block');	
 
-			$('.index_show_right_title').eq(0).addClass('index_show_right_title1');
 		}else{
 			$('.index_top').css('display','block');
 			$('.index_search').css('display','block');
 			$('.index_search1').css('display','none');
-			$('.index_top1').css('display','none');
-			$('.index_show_right_title').eq(0).removeClass('index_show_right_title1');			
+			$('.index_top1').css('display','none');		
 		}
 		console.log(hg)
 		if(top>=hg-33){
@@ -93,8 +83,14 @@ var time = setInterval(right,2000);
 			$('.index_show_bottom').css('margin-top','0');
 		}
 	})
-
-
+	
+	$('.index_show_right_title').on('tap',function(){
+		if($(this).hasClass('index_show_right_title1')){
+			$(this).removeClass('index_show_right_title1')
+		}else{
+			$(this).addClass('index_show_right_title1')
+		}
+	})
 //		console.log(moveY-startY);
 	
 	$('.index_select_list').on('tap',function(){
@@ -155,13 +151,13 @@ var time = setInterval(right,2000);
 	$('.index_select_bg').on('tap',function(){
 		if(!$('.index_select_bg').hasClass('index_select_bg1')&&!$('.index_select_bg').hasClass('index_select_bg2')){
 			$(this).addClass('index_select_bg1');
-			console.log(1)
+//			console.log(1)
 		}else if($('.index_select_bg').hasClass('index_select_bg1')&&!$('.index_select_bg').hasClass('index_select_bg2')){
 			$(this).addClass('index_select_bg2');
-			console.log(2)
+//			console.log(2)
 		}else if($('.index_select_bg').hasClass('index_select_bg1')&&$('.index_select_bg').hasClass('index_select_bg2')){
 			$(this).removeClass('index_select_bg2').removeClass('index_select_bg1');
-			console.log(3)
+//			console.log(3)
 		}
 		
 	})
@@ -170,5 +166,16 @@ $('.index_top_area').on('tap',function(){
 })
 $('.back_index').on('tap',function(){
 	$('.city_select').css('display','none')
+})
+
+$('.index_show_right_bg').on('tap',function(){
+	var time = setInterval(function(){
+		var scrolltop = $(window).scrollTop();
+		 $(window).scrollTop(scrolltop-10);
+		 if(scrolltop==0){
+			clearInterval(time);
+		}
+	},10)
+	
 })
 

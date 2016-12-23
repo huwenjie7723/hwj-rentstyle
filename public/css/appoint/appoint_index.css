@@ -10,19 +10,37 @@ body {
 .i_head {
   background: #fff;
   text-align: center;
-  height: 25px;
-  line-height: 25px;
+  height: 45px;
+  line-height: 45px;
 }
 .appo_index_bar {
-  width: 94%;
-  min-height: 106px;
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  height: 125px;
   border-bottom: 1px solid #e3e3e8;
-  padding: 3%;
-  padding-bottom: 0px;
   background: #fff;
   margin-top: 7px;
 }
-.appo_index_bar .ind_bar_pic {
+.appo_index_bar .appo_index_bar_width {
+  transition: 1s all;
+  padding: 3%;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+.appo_index_bar .appo_index_bar_width .delete {
+  position: absolute;
+  text-align: center;
+  line-height: 120px;
+  right: -20%;
+  top: 0;
+  width: 20%;
+  background: #ff3b30;
+  color: #fff;
+  bottom: 0;
+}
+.appo_index_bar .appo_index_bar_width .ind_bar_pic {
   width: 27%;
   height: 71px;
   border-radius: 3px;
@@ -32,27 +50,27 @@ body {
   background-size: cover;
   margin-right: 10px;
 }
-.appo_index_bar .ind_bar_wor {
+.appo_index_bar .appo_index_bar_width .ind_bar_wor {
   float: left;
-  width: 67%;
+  width: 54%;
 }
-.appo_index_bar .ind_bar_wor .ind_wor_name {
+.appo_index_bar .appo_index_bar_width .ind_bar_wor .ind_wor_name {
   width: 100%;
   height: 16px;
 }
-.appo_index_bar .ind_bar_wor .ind_wor_name .wor_name {
+.appo_index_bar .appo_index_bar_width .ind_bar_wor .ind_wor_name .wor_name {
   font-size: 14px;
   line-height: 16px;
   color: #646464;
   float: left;
 }
-.appo_index_bar .ind_bar_wor .ind_wor_name .wor_time {
+.appo_index_bar .appo_index_bar_width .ind_bar_wor .ind_wor_name .wor_time {
   float: right;
   font-size: 12px;
   color: #b4b4b4;
   position: relative;
 }
-.appo_index_bar .ind_bar_wor .ind_wor_name .wor_time:before {
+.appo_index_bar .appo_index_bar_width .ind_bar_wor .ind_wor_name .wor_time:before {
   content: '';
   position: absolute;
   top: 2px;
@@ -62,22 +80,22 @@ body {
   background: url("../../img/reserve/content_icon@2x.png");
   background-size: cover;
 }
-.appo_index_bar .ind_bar_wor .wor_content {
+.appo_index_bar .appo_index_bar_width .ind_bar_wor .wor_content {
   font-size: 14px;
   text-indent: 1.5em;
   color: #646464;
   line-height: 18px;
   display: inline-block;
 }
-.appo_index_bar .ind_bar_wor .wor_content .content_col {
+.appo_index_bar .appo_index_bar_width .ind_bar_wor .wor_content .content_col {
   color: #323232;
 }
-.appo_index_bar .ind_bar_wor .wor_appo_time {
+.appo_index_bar .appo_index_bar_width .ind_bar_wor .wor_appo_time {
   font-size: 12px;
   color: #ff8a00;
   line-height: 16px;
 }
-.appo_index_bar .wor_btn {
+.appo_index_bar .appo_index_bar_width .wor_btn {
   width: 54px;
   height: 22px;
   border-radius: 3px;
@@ -87,29 +105,19 @@ body {
   color: #fff;
   display: inline-block;
   background: #ea5404;
-  margin-right: 5px;
+  margin-right: 37px;
   float: right;
 }
-.appo_index_bar .wor_state {
+.appo_index_bar .appo_index_bar_width .wor_state {
   font-size: 12px;
   color: #323232;
   float: right;
-  margin-right: 15px;
+  margin-right: 40px;
   margin-top: 5px;
   display: inline-block;
 }
-.appo_index_bar .wor_state1 {
+.appo_index_bar .appo_index_bar_width .wor_state1 {
   display: none;
-}
-@media all and (min-width: 590px) {
-  .appo_index_bar {
-    height: 105px;
-  }
-}
-@media all and (max-width: 350px) {
-  .appo_index_bar {
-    height: 122px;
-  }
 }
 .footer .footer_di .footer_wor_2 {
   background: url("../img/footer_nav/bottom_press_icon03@2x.png") no-repeat 10px 6px;
