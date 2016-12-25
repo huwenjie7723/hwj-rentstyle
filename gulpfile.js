@@ -1,4 +1,4 @@
-//首先引入gulp模块
+﻿//首先引入gulp模块
 var gulp = require('gulp');
 
 var stylus = require('gulp-stylus');
@@ -48,7 +48,7 @@ gulp.task('watcher',['browserSync','stylus','minifycss'],function(){
 gulp.task('nodemon',function(ab){
 	var ft = false;
 	return nodemon({
-		script:'./app.js'
+		script:'./server.js'
 	}).on('start',function(){
 		if(!ft){
 			ab();
