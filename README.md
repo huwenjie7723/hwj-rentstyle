@@ -2,13 +2,13 @@
  	2
 +## 查看步骤 
  	3
-+ - 下载：git clone https://github.com/huwenjie7723/hwj_renthouse.git
++ - 下载：git clone https://github.com/huwenjie7723/hwj-rentstyle.git
  	4
-+ - 进入目录：cd hwj_renthouse
++ - 进入目录：cd hwj-rentstyle
  	5
 + - 安装依赖：npm install
  	6
-+ - 启动项目：node app.js
++ - 启动项目：node server.js
  	7
 + - 访问：http://127.0.0.1:16915
  	8
@@ -16,7 +16,7 @@
  	9
 +## 公司信息：
  	10
-+<title>房我行 - 杭州瑞烁网络科技股份有限公司</title>
++<title>租房时代 - 杭州瑞烁网络科技股份有限公司</title>
  	11
 +<meta name="keywords" content="杭州瑞烁网络科技股份有限公司"/>
  	12
