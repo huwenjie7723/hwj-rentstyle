@@ -57,6 +57,9 @@ $(function(){
 	})
 	
 //	information
+	$('.information_select').on('tap',function(){
+		location.href = '../issue/issue_add.html'
+	})
 	$('.login_top_bg').on('tap',function(){
 		location.href='../user/information.html';
 	})
@@ -69,6 +72,19 @@ $(function(){
 	$('.demand0').on('tap',function(){
 		location.href = 'release.html';
 	})
+	$('.demand1').on('tap',function(){
+		location.href = 'Ilo_two.html';
+	})
+	$('.demand2').on('tap',function(){
+		location.href = 'Ilo_three.html';
+	})
+	$('.demand3').on('tap',function(){
+		location.href = 'Ilo_four.html';
+	})
+	$('.demand4').on('tap',function(){
+		location.href = 'Ilo_five.html';
+	})
+	
 //information1
 	$('.information_change').on('tap',function(){
 		location.href = 'agent_info.html';

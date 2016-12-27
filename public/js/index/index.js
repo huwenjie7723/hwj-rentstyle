@@ -59,20 +59,21 @@ var time = setInterval(right,2000);
 	$(".index_slider").on('touchend',function(){
 		play();
 	})
-
 	$(window).on('scroll',function(){
 		var top = parseInt($(window).scrollTop());
 		if(top>=50){
 			$('.index_top').css('display','none');
 			$('.index_search').css('display','none');
 			$('.index_search1').css('display','block');
-			$('.index_top1').css('display','block');	
+			$('.index_top1').css('display','block');
+			$('.index_show_right_bg').css('display','block');
 
 		}else{
 			$('.index_top').css('display','block');
 			$('.index_search').css('display','block');
 			$('.index_search1').css('display','none');
 			$('.index_top1').css('display','none');		
+			$('.index_show_right_bg').css('display','none');
 		}
 		console.log(hg)
 		if(top>=hg-33){
@@ -95,9 +96,8 @@ var time = setInterval(right,2000);
 	
 	$('.index_select_list').on('tap',function(){
 	//黑色背景高度
-	var whg = $(window).height();
-
-	$('.price_dowm').width(width);
+		var whg = $(window).height();
+		$('.price_dowm').width(width);
 		var $this = $(this);
 		var $index = $this.index();
 		$(window).scrollTop(hg);
@@ -111,9 +111,14 @@ var time = setInterval(right,2000);
 			$('.index_select_list').find('span').removeClass('index_select_list1');
 			$this.find('span').addClass('index_select_list1');
 			$('.index_select_list_hidden').css('display','none');
-			$('.index_select_list_bg').height(whg).css('top',hg+61);
+			$('.index_select_list_bg').height(whg).css('top',hg+61).css('display','block');
 			$this.find('.index_select_list_hidden').css('display','block');
 		}
+	})
+	$('.index_select_list_bg').on('tap',function(){
+		$('.index_select_list_hidden').css('display','none')
+		$('.index_select_list_bg').css('display','none')
+		$('.index_select_li').removeClass('index_select_list1');
 	})
 	$('.area_list li').on('tap',function(e){
 		e.stopPropagation();

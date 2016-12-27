@@ -18,17 +18,9 @@ ul li {
 .information_top .mine {
   text-align: center;
 }
-.information_top:after {
-  content: '';
-  position: absolute;
-  background: url("../../img/information/nav_set_icon@2x.png") no-repeat;
-  background-size: cover;
-  width: 20px;
-  height: 20px;
-  right: 15px;
-  top: 10px;
-}
 .information_top .information_setting {
+  background: url("../../img/information/nav_set_icon@2x.png") no-repeat 15px 10px;
+  background-size: 20px;
   top: 0;
   right: 10px;
   width: 40px;

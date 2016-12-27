@@ -26,6 +26,6 @@ $(function(){
 		$('#cancel_kuang').css('display','block');
 	})
 	$('.queding').on('touchstart',function(){
-		location.href = '../homepage/index.html';
+		location.href = 'orders.html';
 	})
 })

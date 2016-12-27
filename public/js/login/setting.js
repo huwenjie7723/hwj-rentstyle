@@ -1,6 +1,6 @@
 $(function(){
 	$('.set_demand1').on('tap',function(){
-		$('.clear_bg').css('display','block');
+		$('.clear_bg2').css('display','block');
 	})
 	$('.clear_cancle').on('tap',function(e){
 		e.stopPropagation();
@@ -11,5 +11,11 @@ $(function(){
 		$('.clear_bg').css('display','none');
 		$('.set_jiantou1').html(0);
 	})
-	
+	$('.login_out').on('tap',function(){
+		$('.clear_bg1').css('display','block');
+	})
+	$('.clear_sure1').on('tap',function(){
+		sessionStorage.removeItem("username");
+		location.href = '../user/information.html'
+	})
 })
